@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/main.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        <div class="header">
+
+        </div>
+        <div class="wrap">
+            <ul class="menu">
+                <li>@Html.ActionLink("News", "News", "Home")</li>
+                <li>@Html.ActionLink("Recent Post", "Post", "Home")</li>
+                <li>@Html.ActionLink("Recent Comments", "Comments", "Home")</li>
+                <li>@Html.ActionLink("About me", "About", "Home")</li>
+            </ul>
+        </div>
+        @RenderBody()
+        <div class="footer"></div>
+    </div>
+</body>
+</html>
