@@ -1,8 +1,105 @@
-﻿.menu li {
-    display: inline-block;
-    padding: 40px;
+﻿@font-face {
+    font-family: PTSans;
+    src: url(Font/PTS55F.ttf);
+    font-weight: normal;
 }
 
-.content li {
-    
+body {
+    background: url(Images/shattered.png);
+    margin: 0 0 0 0;
+    font-family: PTSans, Arial;
+}
+
+.left-column {
+    width: 30%;
+    height: 1000px;
+    -moz-box-shadow: 0 6px 60px rgba(0,0,0,.65);
+    -webkit-box-shadow: 0 6px 60px rgba(0,0,0,.65);
+    -o-box-shadow: 0 6px 60px rgba(0,0,0,.65);
+    box-shadow: 0 6px 60px rgba(0,0,0,.65);
+    background: url("Images/ligth.jpg") left no-repeat;
+    padding: 0 0 0 0;
+    float: left;
+    position: fixed;
+}
+
+.right-column {
+    width: 70%;
+    height: 1000px;
+    float: right;
+}
+
+.wrap-avatar {
+    padding: 50px;
+    margin: 200px 60px 0 190px;
+    background: url(Images/shattered.png);
+    border-radius: 50%;
+    position: fixed;
+}
+
+.left-column h3 {
+    font-size: 30px;
+    color: #fff5ee;
+    float: right;
+    position: fixed;
+}
+
+.wrap-right-column {
+    margin: 60px 70px 20px 70px;
+}
+
+.wrap-recent-article {
+    width: 100%
+}
+
+.recent-article-one {
+    width: 50%;
+    float: left;
+}
+
+.recent-article-two {
+    width: 50%;
+    float: left;
+}
+
+button {
+    background: url(Images/shattered.png);
+    width: 123px;
+    height: 40px;
+    cursor: pointer;
+    -moz-border-radius: 15%;
+    -webkit-border-radius: 15%;
+    -o-border-radius: 15%;
+    border-radius: 15%;
+    box-shadow: 0 1px 20px rgba(0, 0, 0, .25);
+}
+
+.wrap-button-text {
+    padding: 20px 0 20px 0;
+}
+
+.wrap-button {
+    padding: 20px 0 60px 0;
+}
+
+.input-email, .input-name {
+    width: 195px;
+    height: 25px;
+    margin: 2px 3px 12px 0;
+}
+
+.input-message {
+    width: 400px;
+    height: 100px;
+    padding: 20px 0 20px 0;
+}
+
+.wrap-message {
+    width: 70%;
+    float: left;
+}
+
+.contact {
+    width: 30%;
+    float: left;
 }

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catsville.Blog", "Catsville.Blog\Catsville.Blog.csproj", "{1CAA71B6-26F9-43D8-BC49-B6AA9BF6BC9B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catsville.Blog.Web", "Catsville.Blog\Catsville.Blog.Web.csproj", "{1CAA71B6-26F9-43D8-BC49-B6AA9BF6BC9B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

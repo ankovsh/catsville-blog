@@ -7,20 +7,77 @@
     <link href="~/Content/main.css" rel="stylesheet" />
 </head>
 <body>
-    <div>
+    <div class="page-wrapper">
         <div class="header">
-
+            @*@RenderPage("..", Html);*@
         </div>
-        <div class="wrap">
-            <ul class="menu">
-                <li>@Html.ActionLink("News", "News", "Home")</li>
-                <li>@Html.ActionLink("Recent Post", "Post", "Home")</li>
-                <li>@Html.ActionLink("Recent Comments", "Comments", "Home")</li>
-                <li>@Html.ActionLink("About me", "About", "Home")</li>
-            </ul>
+        <div class="left-column">
+            <div class="wrap-avatar">
+                <img src="" />
+            </div>
+            <h3> Hey there!</h3>
+            @*<ul class="menu">
+                    <li>@Html.ActionLink("News", "News", "Home")</li>
+                    <li>@Html.ActionLink("Recent Post", "Post", "Home")</li>
+                    <li>@Html.ActionLink("Recent Comments", "Comments", "Home")</li>
+                    <li>@Html.ActionLink("About me", "About", "Home")</li>
+                </ul>*@
         </div>
-        @RenderBody()
-        <div class="footer"></div>
+        <div class="right-column">
+            <div class="wrap-right-column">
+                <div class="article">
+                    <h2>Ipsum lorem dolor aliquam ante commodo magna sed accumsan arcu neque.</h2>
+                    <div class="text">
+                        @RenderBody();
+                        <p>Ipsum lorem dolor aliquam ante commodo magna sed accumsan arcu neque.Ipsum lorem dolor aliquam ante commodo magna sed accumsan arcu neque.Ipsum lorem dolor aliquam ante commodo magna sed accumsan arcu neque.Ipsum lorem dolor aliquam ante commodo magna sed accumsan arcu neque.Ipsum lorem dolor aliquam ante commodo magna sed accumsan arcu neque.Ipsum lorem dolor aliquam ante commodo magna sed accumsan arcu neque.Ipsum lorem dolor aliquam ante commodo magna sed accumsan arcu neque.Ipsum lorem dolor aliquam ante commodo magna sed accumsan arcu neque.Ipsum lorem dolor aliquam ante commodo magna sed accumsan arcu neque.Ipsum lorem dolor aliquam ante commodo magna sed accumsan arcu neque.Ipsum lorem dolor aliquam ante commodo magna sed accumsan arcu neque.Ipsum lorem dolor aliquam ante commodo magna sed accumsan arcu neque.Ipsum lorem dolor aliquam ante commodo magna sed accumsan arcu neque.Ipsum lorem dolor aliquam ante commodo magna sed accumsan arcu neque.Ipsum lorem dolor aliquam ante commodo magna sed accumsan arcu neque.Ipsum lorem dolor aliquam ante commodo magna sed accumsan arcu neque.Ipsum lorem dolor aliquam ante commodo magna sed accumsan arcu neque.Ipsum lorem dolor aliquam ante commodo magna sed accumsan arcu neque.Ipsum lorem dolor aliquam ante commodo magna sed accumsan arcu neque.</p>
+                    </div>
+                    <div class="wrap-button-text">
+                        <button title="Learn more" type="button" value="Learn more"></button>
+                    </div>
+                </div>
+                <hr />
+                <div class="wrap-recent-article">
+                    <h2>Recent Posts</h2>
+                    <div class="recent-article-one">
+                        <h2>Ipsum lorem dolor aliquam ante commodo magna sed accumsan arcu neque.</h2>
+                        <div class="text">
+                            <p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac lia.</p>
+                        </div>
+                        <div class="wrap-button-text">
+                            <button title="Learn more"></button>
+                        </div>
+                    </div>
+                    <div class="recent-article-two">
+                        <h2>Ipsum lorem dolor aliquam ante commodo magna sed accumsan arcu ne!!!!!</h2>
+                        <div class="text">
+                            <p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulp.</p>
+                        </div>
+                        <div class="wrap-button-text">
+                            <button title="Learn more"></button>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="footer">
+                    <h2>Get In Touch</h2>
+                    <div class="text">
+                        <p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lo.</p>
+                    </div>
+                    <div class="wrap-message">
+                        <input class="input-name" placeholder="Name" />
+                        <input class="input-email" placeholder="Email" />
+                        <textarea class="input-message" placeholder="Message"></textarea>
+                        <div class="wrap-button">
+                            <button title="Send"></button>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <p> email: anastasya.ermoshina@gmail.com</p>
+                        <p> Belarus, Minsk</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
